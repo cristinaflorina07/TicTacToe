@@ -1,8 +1,7 @@
 public class PrintBoard {
 
-    public static void main(String[] args) {
+    public static void printBoard(char[][] board){
 
-        char[][] board = new char[3][3];
         int i;
         for (i = 0; i < 3; i++) {
             int j;

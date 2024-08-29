@@ -7,5 +7,23 @@ public class WinOrDraw {
             if (board[0][i] == player && board[1][0] == player && board[2][0] == player)
                 return true;
         }
+//        Check diagonals
+        if (board[0][0] == player && board[1][1] == player && board[2][2] == player)
+            return true;
+        if (board[0][2] == player && board[1][1] == player && board[2][0] == player)
+            return true;
+        else
+            return false;
     }
-}
+
+    public static boolean checkDrow(char[][] board) {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (board[i][j] == ' ')
+                    return false;
+                }
+            }
+
+            return true;
+        }
+    }
